@@ -17,7 +17,9 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header className="border-b border-gray-300">
-      <div className="container flex items-center px-4 py-4 md:px-0 justify-between">
+      <div
+        className="container px-4 py-4 md:px-0 flex flex-col items-center md:flex-row md:justify-between"
+      >
         <h1>
           <Link to="/">{ siteTitle }</Link>
         </h1>
