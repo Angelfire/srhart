@@ -1,0 +1,7 @@
+:root {
+  --color-blue: #3273dc;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

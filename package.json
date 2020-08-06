@@ -1,0 +1,36 @@
+{
+  "name": "gatsby-personal-website",
+  "version": "1.0.0",
+  "description": "Personal Website SrHart",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
+  },
+  "keywords": [
+    "gatsby",
+    "personal",
+    "website",
+    "srhart"
+  ],
+  "author": "Andres Bedoya",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^2.24.23",
+    "gatsby-plugin-manifest": "^2.4.21",
+    "gatsby-plugin-offline": "^3.2.21",
+    "gatsby-plugin-postcss": "^2.3.11",
+    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-source-filesystem": "^2.3.23",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^1.6.1"
+  }
+}
