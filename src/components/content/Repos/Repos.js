@@ -17,19 +17,17 @@ const Repos = () => {
   });
 
   return (
-    <div className="bg-gray-100 mt-4 md:mt-10">
-      <div className="container px-4 py-4 md:px-0 md:py-8">
-        {isError && <div>Something went wrong</div>}
+    <div className="w-full lg:w-2/3">
+      {isError && <div>Something went wrong</div>}
 
-        {isLoading ? (
-          <div>Loading...</div>
-        ) : (
-          <Fragment>
-            <h3 className="text-4xl">Latest Repos</h3>
-            <div className="flex-none md:flex md:flex-wrap">{ items }</div>
-          </Fragment>
-        )}
-      </div>
+      {isLoading ? (
+        <div>Loading...</div>
+      ) : (
+        <Fragment>
+          <h3 className="text-4xl">Latest Repos</h3>
+          <div className="flex-none md:flex md:flex-wrap">{ items }</div>
+        </Fragment>
+      )}
     </div>
   );
 };

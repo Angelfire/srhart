@@ -8,8 +8,10 @@ import SEO from '../components/Seo';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Intro />
-    <Repos />
+    <div className="container flex flex-wrap mt-10"> 
+      <Intro />
+      <Repos />
+    </div>
     <Footer />
   </Layout>
 );
