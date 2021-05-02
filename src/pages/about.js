@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout';
-import SEO from "../components/Seo";
+import Seo from "../components/Seo";
 
 const About = () => (
   <Layout>
-    <SEO title="About Me" />
+    <Seo title="About Me" />
     <div className="container mt-10 px-4 md:px-0">
       <h2 className="text-4xl">About me - Andrés Bedoya G.</h2>
       <p className="mb-4">
