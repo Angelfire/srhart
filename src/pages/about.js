@@ -13,7 +13,7 @@ const About = () => (
         Informatics) living in Medellín, Colombia.{' '}
       </p>
       <p className="mb-4">
-        Passionate JavaScript developer with more than 9 years of experience.
+        Passionate JavaScript developer with more than 10 years of experience.
         I developed applications and web pages using open source technologies;
         I mainly work as a Frontend developer creating user interfaces and
         visualizing data.

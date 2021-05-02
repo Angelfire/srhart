@@ -2,9 +2,9 @@ import React from 'react';
 import ProfilePic from '../../images/profile.jpg';
 
 const Intro = () => (
-  <div className="w-full lg:w-1/3 flex flex-col items-center">
+  <div className="container flex flex-col items-center mt-10 px-4 mb:px-0">
     <h2 className="text-5xl">Andrés Bedoya</h2>
-    <img className="rounded-full my-6" src={ ProfilePic } alt="Andrés Bedoya" />
+    <img className="rounded-full my-6" src={ProfilePic} alt="Andrés Bedoya" />
     <h3 className="text-3xl">Hardcore Javascript Developer</h3>
     <p className="py-6">
       Blogger Evangelist at{' '}
