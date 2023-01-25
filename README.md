@@ -3,7 +3,6 @@
 
 Powered by [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/)
 
-
 ## Getting Started
 
 First, run the development server:

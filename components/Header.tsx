@@ -26,7 +26,7 @@ export default function Header() {
 
   return (
     <header className="container px-4 py-4 flex items-center flex-col md:flex-row md:justify-between lg:px-0">
-      <a href="/" className="flex">
+      <Link href="/" className="flex">
         <h1 className="flex">
           <span className="font-bold">&lt;&nbsp;</span>
           <Image
@@ -38,7 +38,7 @@ export default function Header() {
           />
           <span className="font-bold">&nbsp;/&gt;</span>
         </h1>
-      </a>
+      </Link>
       <nav className="mt-4 md:mt-0">
         <ul className="flex flex-row">
           {navLinks.map(({name, path}) =>

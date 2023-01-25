@@ -98,8 +98,8 @@ export default function Projects() {
                     <a href={linkTo} target="_blank" rel="noopener noreferrer">{name}</a>
                   </h1>
                   <div className='flex'>
-                    {tags.map((tag) => (
-                      <span className="self-start bg-blue-400 font-mono p-1 text-xs text-white rounded mr-2">
+                    {tags.map((tag, index) => (
+                      <span className="self-start bg-blue-400 font-mono p-1 text-xs text-white rounded mr-2" key={`tag-${index}`}>
                         {tag}
                       </span>
                     ))}
