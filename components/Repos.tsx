@@ -7,7 +7,7 @@ export default function Repos() {
   const { data, error } = useSWR('/api/github', fetcher)
 
   if (error) return <div className="flex flex-col my-16 mx-8 sm:container">Failed to load</div>
-  if (!data) return <div className="flex flex-col my-16 mx-8 sm:container">Loading...</div>
+  if (!data) return <div className="flex flex-col my-16 mx-8 sm:container">Loading...</div>  
   
   return (
     <div className="flex flex-col my-16 mx-8 sm:container">
@@ -17,7 +17,14 @@ export default function Repos() {
             <div className="bg-white flex flex-col shadow-md p-2" key={repo.name}>
               <div className="flex items-center">
                 <RepoCloneIcon />
-                <h3 className="font-mono ml-2">{repo.name}</h3>
+                <h3 className="font-mono ml-2">
+                  <a
+                    href={repo.githubUrl}
+                    className="hover:underline"
+                    target="_blank"
+                    rel="noreferrer"
+                  >{repo.name}</a>
+                </h3>
               </div>
               <p className="mt-2 text-sm text-slate-600">{repo.description}</p>
               <div className="flex justify-between items-center mt-4">

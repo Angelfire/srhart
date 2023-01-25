@@ -9,6 +9,7 @@ type DataResponse = {
 type RepoResponse = {
   name: string,
   description: string,
+  html_url: string,
   language: string,
   stargazers_count: number,
   forks: number,
@@ -27,13 +28,17 @@ export default async function handler(
     per_page: 6
   })
 
+  console.log(data);
+  
+
   const repos = data.map((repo: RepoResponse) => ({
-    name: repo.name,
     description: repo.description,
-    language: repo.language,
-    starsCount: repo.stargazers_count,
     forks: repo.forks,
-    size: repo.size
+    githubUrl: repo.html_url,
+    language: repo.language,
+    name: repo.name,
+    size: repo.size,
+    starsCount: repo.stargazers_count
   }))
 
   res.status(200).json({ repos })

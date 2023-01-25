@@ -79,7 +79,7 @@ export const projects = [
 export default function Projects() {
   return (
     <Layout
-      canonical='projects'
+      canonical="projects"
       description="Some of the most relevant projects of Andres Bedoya"
       keywords="APIs, NextJS, GatsbyJS, ReactJS, Tailwind CSS"
       title="Projects - Andrés Bedoya"
