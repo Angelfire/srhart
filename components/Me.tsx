@@ -25,7 +25,7 @@ export default function Me() {
       <div className="flex ml-24 rounded-full ring-8 ring-blue-400 hidden xl:block">
         <Image
           className="rounded-full"
-          src="/me.webp"
+          src="/me.jpg"
           alt="Andres Bedoya"
           width="300"
           height="300"
