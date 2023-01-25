@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <header className="container px-4 py-4 flex items-center flex-col md:flex-row md:justify-between lg:px-0">
       <Link href="/" className="flex">
-        <h1 className="flex">
+        <div className="flex">
           <span className="font-bold">&lt;&nbsp;</span>
           <Image
             src="/logo-site.png"
@@ -37,7 +37,7 @@ export default function Header() {
             priority
           />
           <span className="font-bold">&nbsp;/&gt;</span>
-        </h1>
+        </div>
       </Link>
       <nav className="mt-4 md:mt-0">
         <ul className="flex flex-row">

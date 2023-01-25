@@ -17,14 +17,14 @@ export default function Repos() {
             <div className="bg-white flex flex-col shadow-md p-2" key={repo.name}>
               <div className="flex items-center">
                 <RepoCloneIcon />
-                <h3 className="font-mono ml-2">
+                <p className="font-mono ml-2">
                   <a
                     href={repo.githubUrl}
                     className="hover:underline"
                     target="_blank"
                     rel="noreferrer"
                   >{repo.name}</a>
-                </h3>
+                </p>
               </div>
               <p className="mt-2 text-sm text-slate-600">{repo.description}</p>
               <div className="flex justify-between items-center mt-4">

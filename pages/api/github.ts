@@ -28,9 +28,6 @@ export default async function handler(
     per_page: 6
   })
 
-  console.log(data);
-  
-
   const repos = data.map((repo: RepoResponse) => ({
     description: repo.description,
     forks: repo.forks,
