@@ -53,12 +53,12 @@ export default function Header() {
             </li>
           )}
           <li>
-            <a
+            <Link
               className="font-semibold px-2 text-slate-500 hover:decoration-4 hover:decoration-blue-400 hover:underline hover:underline-offset-4"
               href="https://velocidadescape.com/"
               target="_blank"
               rel="noreferrer"
-            >Blog</a>
+            >Blog</Link>
           </li>
         </ul>
       </nav>

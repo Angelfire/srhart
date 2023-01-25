@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Layout from "@/components/Layout"
 
 export const talks = [
@@ -54,7 +55,7 @@ export default function Talks() {
             <div className="p-4">
               <div className="flex flex-col">
                 <h1 className="text-lg font-mono font-semibold text-slate-900">
-                  <a href={url} target="_blank" rel="noopener noreferrer">{name}</a>
+                  <Link href={url} target="_blank" rel="noopener noreferrer">{name}</Link>
                 </h1>
                 <p className="mt-2 text-sm text-slate-600">date: {createdAt}</p>
               </div>

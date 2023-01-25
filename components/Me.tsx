@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from 'next/link'
 
 export default function Me() {
   return (
@@ -13,13 +14,13 @@ export default function Me() {
         </p>
         <p className="font-semibold mt-2 text-lg">
           Blogger Evangelist at{' '}
-        <a
+        <Link
           aria-label="Velocidad de Escape blog"
           className="text-blue-400 hover:underline"
           href="https://www.velocidadescape.com/"
           rel="noopener noreferrer"
           target="_blank"
-        >Velocidad de Escape</a>.
+        >Velocidad de Escape</Link>.
         </p>
       </div>
       <div className="flex ml-24 rounded-full ring-8 ring-blue-400 hidden xl:block">

@@ -1,4 +1,5 @@
 // import Image from 'next/image'
+import Link from 'next/link'
 import Layout from '@/components/Layout'
 
 export const projects = [
@@ -95,7 +96,7 @@ export default function Projects() {
               <div className="p-4">
                 <div className="flex flex-col">
                   <h1 className="text-lg font-mono font-semibold text-slate-900">
-                    <a href={linkTo} target="_blank" rel="noopener noreferrer">{name}</a>
+                    <Link href={linkTo} target="_blank" rel="noopener noreferrer">{name}</Link>
                   </h1>
                   <div className='flex'>
                     {tags.map((tag, index) => (

@@ -1,4 +1,5 @@
 import useSWR from 'swr'
+import Link from 'next/link'
 import { RepoCloneIcon, StarIcon, RepoForkedIcon } from '@primer/octicons-react'
 
 const fetcher = (apiURL: string) => fetch(apiURL).then((res) => res.json())
@@ -18,12 +19,12 @@ export default function Repos() {
               <div className="flex items-center">
                 <RepoCloneIcon />
                 <p className="font-mono ml-2">
-                  <a
+                  <Link
                     href={repo.githubUrl}
                     className="hover:underline"
                     target="_blank"
                     rel="noreferrer"
-                  >{repo.name}</a>
+                  >{repo.name}</Link>
                 </p>
               </div>
               <p className="mt-2 text-sm text-slate-600">{repo.description}</p>
