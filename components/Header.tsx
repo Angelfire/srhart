@@ -27,18 +27,16 @@ export default function Header() {
   return (
     <header className="container px-4 py-4 flex items-center flex-col md:flex-row md:justify-between lg:px-0">
       <Link href="/" className="flex">
-        <div className="flex">
-          <span className="font-bold">&lt;&nbsp;</span>
-          <Image
-            src="/logo-site.png"
-            alt="SrHart logo"
-            width={24}
-            height={24}
-            priority
-          />
-          <span className="font-bold">&nbsp;/&gt;</span>
-          <p className="sr-only">Andrés Bedoya - Sr.Hart</p>
-        </div>
+        <span className="font-bold">&lt;&nbsp;</span>
+        <Image
+          src="/logo-site.png"
+          alt="SrHart logo"
+          width={24}
+          height={24}
+          priority
+        />
+        <span className="font-bold">&nbsp;/&gt;</span>
+        <span className="sr-only">Andrés Bedoya - Sr.Hart</span>
       </Link>
       <nav className="mt-4 md:mt-0">
         <ul className="flex flex-row">

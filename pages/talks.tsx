@@ -57,7 +57,7 @@ export default function Talks() {
                 <h1 className="text-lg font-mono font-semibold text-slate-900">
                   <Link href={url} target="_blank" rel="noopener noreferrer">{name}</Link>
                 </h1>
-                <p className="mt-2 text-sm text-slate-600">date: {createdAt}</p>
+                <time dateTime={createdAt} className="mt-2 text-sm text-slate-600">date: {createdAt}</time>
               </div>
             </div>
           </div>
