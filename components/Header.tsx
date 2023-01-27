@@ -37,6 +37,7 @@ export default function Header() {
             priority
           />
           <span className="font-bold">&nbsp;/&gt;</span>
+          <p className="sr-only">Andrés Bedoya - Sr.Hart</p>
         </div>
       </Link>
       <nav className="mt-4 md:mt-0">
