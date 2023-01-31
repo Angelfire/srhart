@@ -17,9 +17,15 @@ export const projects = [
   },
   {
     name: 'Traveling',
-    linkTo: 'https://travelsing.netlify.app/',
+    linkTo: 'https://traveling-omega.vercel.app/',
     description: 'GPT-3 experiment using OpenAI API',
     tags: ['NextJS', 'OpenAI']
+  },
+  {
+    name: 'Markline',
+    linkTo: 'https://markline.vercel.app/',
+    description: 'Markdown online editor',
+    tags: ['markdown']
   },
   {
     name: 'Colombian Holidays',
