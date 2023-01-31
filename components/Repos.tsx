@@ -8,10 +8,10 @@ export default function Repos() {
   const { data, error } = useSWR('/api/github', fetcher)
 
   if (error) return <div className="flex flex-col my-16 mx-8 sm:container">Failed to load</div>
-  if (!data) return <div className="flex flex-col my-16 mx-8 sm:container">Loading...</div>  
+  if (!data) return <div className="flex flex-col my-16 mx-8 sm:container">Loading projects and open source contributions...</div>  
   
   return (
-    <div className="flex flex-col my-16 mx-8 sm:container">
+    <div className="flex flex-col my-14 mx-8 sm:container">
       { data.repos.length ? (
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {data.repos.map((repo: any) => (

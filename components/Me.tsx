@@ -7,12 +7,20 @@ export default function Me() {
       <div className="flex flex-col">
         <span className="text-6xl font-extrabold">I am</span>
         <h1 className="text-blue-600 text-6xl font-extrabold">Andrés Bedoya</h1>
-        <p className="font-semibold mt-2 text-lg">
-          I&apos;m a JavaScript Software Engineer from
-          Colombia <span className="mr-1">&#127464;&#127476;</span> with
-          an interest in fund investing, personal finance and Open Source.
+        <div className="mt-3 inline-flex items-center gap-2">
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+          </span>
+          <span className="text-sm font-medium tracking-tight">
+            Currently in Medellín, Colombia <span className="mr-1">&#127464;&#127476;</span>
+          </span>
+        </div>
+        <p className="font-medium mt-2 text-lg">
+          JavaScript Software Engineer with an interest in fund investing, personal finance and Open Source.
+          See my <Link className="text-blue-400 hover:underline" href="https://read.cv/anbedoyag" rel="noopener noreferrer" target="_blank">Curriculum Vitae</Link>.
         </p>
-        <p className="font-semibold mt-2 text-lg">
+        <p className="font-medium mt-2 text-lg">
           Blogger Evangelist at{' '}
         <Link
           aria-label="Velocidad de Escape blog"
@@ -23,7 +31,7 @@ export default function Me() {
         >Velocidad de Escape</Link>.
         </p>
       </div>
-      <div className="flex ml-24 rounded-full ring-8 ring-blue-400 hidden xl:block">
+      <div className="ml-24 rounded-full ring-8 ring-blue-400 hidden xl:block">
         <Image
           className="rounded-full"
           src="/me.jpg"
