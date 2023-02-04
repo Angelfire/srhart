@@ -44,8 +44,8 @@ export default function Header() {
             <li key={`item-${name}`}>
               <Link href={path} className={`font-semibold px-2 text-slate-500 ${
                 pathname === path
-                    ? "decoration-4 decoration-blue-400 underline underline-offset-4"
-                    : "hover:decoration-4 hover:decoration-blue-400 hover:underline hover:underline-offset-4"
+                    ? "decoration-4 decoration-blue-600 underline underline-offset-4"
+                    : "hover:decoration-4 hover:decoration-blue-600 hover:underline hover:underline-offset-4"
                   }`}
                 >{name}
               </Link>
@@ -53,7 +53,7 @@ export default function Header() {
           )}
           <li>
             <Link
-              className="font-semibold px-2 text-slate-500 hover:decoration-4 hover:decoration-blue-400 hover:underline hover:underline-offset-4"
+              className="font-semibold px-2 text-slate-500 hover:decoration-4 hover:decoration-blue-600 hover:underline hover:underline-offset-4"
               href="https://velocidadescape.com/"
               target="_blank"
               rel="noreferrer"
