@@ -99,23 +99,21 @@ export default function Projects() {
               {/* <div className="flex-none w-48 relative">
                 <Image src={image} alt="" className="absolute inset-0 w-full h-full object-cover" layout="fill" />
               </div> */}
-              <div className="p-4">
-                <div className="flex flex-col">
-                  <h1 className="text-lg font-mono font-semibold text-slate-900">
-                    <Link href={linkTo} target="_blank" rel="noopener noreferrer">{name}</Link>
-                  </h1>
-                  <div className='flex'>
-                    {tags.map((tag, index) => (
-                      <span className="self-start bg-blue-400 font-mono p-1 text-xs text-white rounded mr-2" key={`tag-${index}`}>
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
+              <div className="flex flex-col">
+                <h1 className="text-lg font-mono font-semibold text-slate-900">
+                  <Link href={linkTo} target="_blank" rel="noopener noreferrer">{name}</Link>
+                </h1>
+                <div className='flex'>
+                  {tags.map((tag, index) => (
+                    <span className="self-start bg-blue-400 font-mono p-1 text-xs text-white rounded mr-2" key={`tag-${index}`}>
+                      {tag}
+                    </span>
+                  ))}
                 </div>
-                <p className="mt-4 text-sm text-slate-600">
-                  {description}
-                </p>
               </div>
+              <p className="mt-4 text-sm text-slate-600">
+                {description}
+              </p>
             </div>
           ))}
         </div>

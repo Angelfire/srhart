@@ -52,13 +52,11 @@ export default function Talks() {
       <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
         {talks.map(({ createdAt, name, url }) => (
           <div className="border border-gray-200 flex p-2 rounded shadow-md" key={`talk-${name}`}>
-            <div className="p-4">
-              <div className="flex flex-col">
-                <h1 className="text-lg font-mono font-semibold text-slate-900">
-                  <Link href={url} target="_blank" rel="noopener noreferrer">{name}</Link>
-                </h1>
-                <time dateTime={createdAt} className="mt-2 text-sm text-slate-600">date: {createdAt}</time>
-              </div>
+            <div className="flex flex-col">
+              <h1 className="text-lg font-mono font-semibold text-slate-900">
+                <Link href={url} target="_blank" rel="noopener noreferrer">{name}</Link>
+              </h1>
+              <time dateTime={createdAt} className="mt-2 text-sm text-slate-600">date: {createdAt}</time>
             </div>
           </div>
         ))}
