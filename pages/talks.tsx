@@ -51,7 +51,7 @@ export default function Talks() {
       <h2 className="text-4xl mb-8 lg:text-6xl">Talks</h2>
       <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
         {talks.map(({ createdAt, name, url }) => (
-          <div className="bg-white flex shadow-md" key={`talk-${name}`}>
+          <div className="border border-gray-200 flex p-2 rounded shadow-md" key={`talk-${name}`}>
             <div className="p-4">
               <div className="flex flex-col">
                 <h1 className="text-lg font-mono font-semibold text-slate-900">

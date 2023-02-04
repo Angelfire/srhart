@@ -95,7 +95,7 @@ export default function Projects() {
         <h2 className="text-4xl mb-8 lg:text-6xl">Projects</h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {projects.map(({ description, linkTo, name, tags}) => (
-            <div className="bg-white flex shadow-md" key={`project-${name}`}>
+            <div className="border border-gray-200 p-2 rounded shadow-md" key={`project-${name}`}>
               {/* <div className="flex-none w-48 relative">
                 <Image src={image} alt="" className="absolute inset-0 w-full h-full object-cover" layout="fill" />
               </div> */}

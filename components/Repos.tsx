@@ -15,7 +15,7 @@ export default function Repos() {
       { data.repos.length ? (
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {data.repos.map((repo: any) => (
-            <div className="bg-white flex flex-col border border-gray-200 p-2 rounded shadow-md" key={repo.name}>
+            <div className="flex flex-col border border-gray-200 p-2 rounded shadow-md" key={repo.name}>
               <div className="flex items-center">
                 <RepoCloneIcon />
                 <p className="font-mono ml-2">
