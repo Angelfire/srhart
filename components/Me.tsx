@@ -31,13 +31,13 @@ export default function Me() {
         >Velocidad de Escape</Link>.
         </p>
       </div>
-      <div className="ml-24 rounded-full ring-8 ring-blue-600 hidden xl:block">
+      <div className="ml-24 hidden xl:block">
         <Image
           className="rounded-full"
           src="/me.jpg"
           alt="Andres Bedoya"
-          width="300"
-          height="300"
+          width="330"
+          height="330"
           priority
         />
       </div>

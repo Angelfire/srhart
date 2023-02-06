@@ -11,7 +11,7 @@ export default function About() {
       <div className="flex flex-col mb-12 mx-8 sm:container">
         <h2 className="text-4xl mb-8 lg:text-6xl">About Me</h2>
         <p className="mb-4">
-          Social Engineering Specialist / JavaScript Software Engineer / Web Engineer / Hardcore JavaScript Developer / Python - Node.jsEnthusiast / I Love /[Dd]ogs?/
+          Social Engineering Specialist / JavaScript Software Engineer / Web Engineer / Hardcore JavaScript Developer / Python - Node.js Enthusiast / I Love /[Dd]ogs?/
         </p>
         <div className="justify-between lg:flex">
           <div>
