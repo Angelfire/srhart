@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import Image from "next/image"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 const navLinks = [
   {
@@ -9,23 +9,23 @@ const navLinks = [
   },
   {
     name: "Projects",
-    path: "/projects"
+    path: "/projects",
   },
   {
     name: "Talks",
-    path: "/talks"
+    path: "/talks",
   },
   {
     name: "About",
-    path: "/about"
-  }
+    path: "/about",
+  },
 ]
 
 export default function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="container px-4 py-4 flex items-center flex-col md:flex-row md:justify-between lg:px-0">
+    <header className="container flex flex-col items-center px-4 py-4 md:flex-row md:justify-between lg:px-0">
       <Link href="/" className="flex">
         <span className="font-bold">&lt;&nbsp;</span>
         <Image
@@ -40,24 +40,29 @@ export default function Header() {
       </Link>
       <nav className="mt-4 md:mt-0">
         <ul className="flex flex-row">
-          {navLinks.map(({name, path}) =>
+          {navLinks.map(({ name, path }) => (
             <li key={`item-${name}`}>
-              <Link href={path} className={`font-semibold px-2 text-slate-500 ${
-                pathname === path
-                    ? "decoration-4 decoration-blue-600 underline underline-offset-4"
-                    : "hover:decoration-4 hover:decoration-blue-600 hover:underline hover:underline-offset-4"
-                  }`}
-                >{name}
+              <Link
+                href={path}
+                className={`px-2 font-semibold text-slate-500 ${
+                  pathname === path
+                    ? "underline decoration-blue-600 decoration-4 underline-offset-4"
+                    : "hover:underline hover:decoration-blue-600 hover:decoration-4 hover:underline-offset-4"
+                }`}
+              >
+                {name}
               </Link>
             </li>
-          )}
+          ))}
           <li>
             <Link
-              className="font-semibold px-2 text-slate-500 hover:decoration-4 hover:decoration-blue-600 hover:underline hover:underline-offset-4"
+              className="px-2 font-semibold text-slate-500 hover:underline hover:decoration-blue-600 hover:decoration-4 hover:underline-offset-4"
               href="https://velocidadescape.com/"
               target="_blank"
               rel="noreferrer"
-            >Blog</Link>
+            >
+              Blog
+            </Link>
           </li>
         </ul>
       </nav>

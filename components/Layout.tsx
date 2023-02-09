@@ -1,26 +1,26 @@
-import Head from 'next/head'
-import { Analytics } from '@/components/Analytics'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import Head from "next/head"
+import { Analytics } from "@/components/Analytics"
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 
 type LayoutProps = {
-  canonical?: string,
-  children: React.ReactNode,
-  description: string,
-  keywords: string,
-  title: string,
+  canonical?: string
+  children: React.ReactNode
+  description: string
+  keywords: string
+  title: string
 }
 
 export default function Layout({
-  canonical = '',
+  canonical = "",
   children,
   description,
   keywords,
-  title
+  title,
 }: LayoutProps) {
   return (
     <>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex min-h-screen flex-col">
         <Head>
           <title>{title}</title>
           <link rel="canonical" href={`https://srhart.co/${canonical}`} />
@@ -29,11 +29,31 @@ export default function Layout({
           <link rel="apple-touch-icon" sizes="48x48" href="/icon-48x48.png" />
           <link rel="apple-touch-icon" sizes="72x72" href="/icon-72x72.png" />
           <link rel="apple-touch-icon" sizes="96x96" href="/icon-96x96.png" />
-          <link rel="apple-touch-icon" sizes="144x144" href="/icon-144x144.png" />
-          <link rel="apple-touch-icon" sizes="192x192" href="/icon-192x192.png" />
-          <link rel="apple-touch-icon" sizes="256x256" href="/icon-256x256.png" />
-          <link rel="apple-touch-icon" sizes="384x384" href="/icon-384x384.png" />
-          <link rel="apple-touch-icon" sizes="512x512" href="/icon-512x512.png" />
+          <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="/icon-144x144.png"
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="192x192"
+            href="/icon-192x192.png"
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="256x256"
+            href="/icon-256x256.png"
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="384x384"
+            href="/icon-384x384.png"
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="512x512"
+            href="/icon-512x512.png"
+          />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#60a5fa" />
           <meta name="description" content={description} />
@@ -45,12 +65,13 @@ export default function Layout({
           <meta name="twitter:title" content={title} />
           <meta name="twitter:description" content={description} />
           <meta name="twitter:alt" content={description} />
-          <meta name="twitter:title" content={`https://srhart.co/${canonical}`} />
+          <meta
+            name="twitter:title"
+            content={`https://srhart.co/${canonical}`}
+          />
         </Head>
         <Header />
-        <main className="flex flex-1 flex-col mt-12 w-full">
-          {children}
-        </main>
+        <main className="mt-12 flex w-full flex-1 flex-col">{children}</main>
         <Footer />
       </div>
       <Analytics />
