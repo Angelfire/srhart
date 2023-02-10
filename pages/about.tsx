@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout"
+import Link from "next/link"
 
 export default function About() {
   return (
@@ -15,6 +16,30 @@ export default function About() {
           Engineer / Hardcore JavaScript Developer / Python - Node.js Enthusiast
           / I Love /[Dd]ogs?/
         </p>
+        <ul className="mb-4 list-disc pl-8">
+          <li>
+            Resume:{" "}
+            <Link
+              className="text-blue-600 hover:underline"
+              href="https://read.cv/anbedoyag"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              read.cv
+            </Link>
+          </li>
+          <li>
+            Schedule a meeting:{" "}
+            <Link
+              className="text-blue-600 hover:underline"
+              href="          https://cal.com/anbedoyag"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              cal.com
+            </Link>
+          </li>
+        </ul>
         <div className="justify-between lg:flex">
           <div>
             <h3 className="mb-2 text-3xl lg:text-4xl">

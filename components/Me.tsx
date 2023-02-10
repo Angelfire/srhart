@@ -21,16 +21,7 @@ export default function Me() {
         </div>
         <p className="mt-2 text-base font-medium md:text-lg">
           JavaScript Software Engineer with an interest in fund investing,
-          personal finance, web development and Open Source. See my{" "}
-          <Link
-            className="text-blue-600 hover:underline"
-            href="https://read.cv/anbedoyag"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Curriculum Vitae
-          </Link>
-          .
+          personal finance, web development and Open Source.
         </p>
         <p className="mt-2 text-base font-medium md:text-lg">
           Blogger Evangelist at{" "}
