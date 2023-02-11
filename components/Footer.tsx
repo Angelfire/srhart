@@ -1,6 +1,5 @@
 import Link from "next/link"
-import { Github } from "@/components/icons/Github"
-import { Twitter } from "@/components/icons/Twitter"
+import { Github, Twitter } from "@/components/icons"
 
 export default function Footer() {
   return (
@@ -12,22 +11,20 @@ export default function Footer() {
         </p>
         <p className="flex gap-3">
           <Link
-            className="w-5 hover:opacity-60"
             aria-label="Twitter account"
             href="https://github.com/angelfire"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <Github />
+            <Github className="w-5 hover:opacity-60" />
           </Link>
           <a
             aria-label="Twitter account"
-            className="w-5 hover:opacity-60"
             href="https://twitter.com/MonsieurHart"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <Twitter />
+            <Twitter className="w-5 hover:opacity-60" />
           </a>
         </p>
       </div>
