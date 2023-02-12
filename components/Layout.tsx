@@ -34,7 +34,7 @@ export default function Layout({
         <link rel="apple-touch-icon" sizes="384x384" href="/icon-384x384.png" />
         <link rel="apple-touch-icon" sizes="512x512" href="/icon-512x512.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#60a5fa" />
+        <meta name="theme-color" content="rgb(15 23 42)" />
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
         <meta property="og:image" content="https://srhart.co/srhart-logo.svg" />
