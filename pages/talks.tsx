@@ -55,15 +55,15 @@ export default function Talks() {
               className="flex rounded border border-gray-200 p-2 shadow-md"
               key={`talk-${name}`}
             >
-              <div className="flex flex-col">
-                <h1 className="font-mono text-lg font-semibold text-slate-900">
+              <div className="flex flex-col justify-between">
+                <h3 className="font-mono text-lg font-semibold text-slate-900 dark:text-slate-100">
                   <Link href={url} target="_blank" rel="noopener noreferrer">
                     {name}
                   </Link>
-                </h1>
+                </h3>
                 <time
                   dateTime={createdAt}
-                  className="mt-2 text-sm text-slate-600"
+                  className="mt-2 text-sm text-slate-600 dark:text-slate-100"
                 >
                   date: {createdAt}
                 </time>

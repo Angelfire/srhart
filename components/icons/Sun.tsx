@@ -1,4 +1,4 @@
-export const Sun = () => (
+export const Sun = ({ className }: { className?: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -6,9 +6,10 @@ export const Sun = () => (
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
   >
     <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path>
     <path d="M12 3v1"></path>
