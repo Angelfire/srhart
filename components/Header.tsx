@@ -1,6 +1,6 @@
-import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { Logo } from "@/components/icons"
 
 const navLinks = [
   {
@@ -26,28 +26,20 @@ export default function Header() {
 
   return (
     <header className="container flex flex-col items-center px-4 py-4 md:flex-row md:justify-between lg:px-0">
-      <Link href="/" className="flex">
-        <span className="font-bold">&lt;&nbsp;</span>
-        <Image
-          src="/logo-site.png"
-          alt="SrHart logo"
-          width={24}
-          height={24}
-          priority
-        />
-        <span className="font-bold">&nbsp;/&gt;</span>
+      <Link href="/">
+        <Logo className="h-6 w-12 dark:text-slate-100" />
         <span className="sr-only">Andrés Bedoya - Sr.Hart</span>
       </Link>
       <nav className="mt-4 md:mt-0">
-        <ul className="flex flex-row">
+        <ul className="flex flex-row gap-1">
           {navLinks.map(({ name, path }) => (
             <li key={`item-${name}`}>
               <Link
                 href={path}
-                className={`px-2 font-semibold text-slate-500 ${
+                className={`rounded-md py-1.5 px-2 font-semibold text-slate-900 dark:text-slate-100 dark:hover:bg-slate-800 ${
                   pathname === path
-                    ? "underline decoration-blue-600 decoration-4 underline-offset-4"
-                    : "hover:underline hover:decoration-blue-600 hover:decoration-4 hover:underline-offset-4"
+                    ? "bg-slate-100 dark:bg-slate-800"
+                    : "hover:bg-slate-100 hover:font-semibold dark:hover:bg-slate-800"
                 }`}
               >
                 {name}
@@ -56,7 +48,7 @@ export default function Header() {
           ))}
           <li>
             <Link
-              className="px-2 font-semibold text-slate-500 hover:underline hover:decoration-blue-600 hover:decoration-4 hover:underline-offset-4"
+              className="rounded-md px-2 py-1.5 font-semibold text-slate-900 hover:bg-slate-100 dark:text-slate-100 dark:hover:bg-slate-800"
               href="https://velocidadescape.com/"
               target="_blank"
               rel="noreferrer"

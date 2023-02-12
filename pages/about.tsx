@@ -20,7 +20,7 @@ export default function About() {
           <li>
             Resume:{" "}
             <Link
-              className="text-blue-600 hover:underline"
+              className="underline hover:animate-ping hover:no-underline"
               href="https://read.cv/anbedoyag"
               rel="noopener noreferrer"
               target="_blank"
@@ -31,8 +31,8 @@ export default function About() {
           <li>
             Schedule a meeting:{" "}
             <Link
-              className="text-blue-600 hover:underline"
-              href="          https://cal.com/anbedoyag"
+              className="underline hover:animate-ping hover:no-underline"
+              href="https://cal.com/anbedoyag"
               rel="noopener noreferrer"
               target="_blank"
             >

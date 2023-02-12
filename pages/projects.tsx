@@ -105,15 +105,15 @@ export default function Projects() {
                 <Image src={image} alt="" className="absolute inset-0 w-full h-full object-cover" layout="fill" />
               </div> */}
               <div className="flex flex-col">
-                <h1 className="font-mono text-lg font-semibold text-slate-900">
+                <h3 className="font-mono text-lg font-semibold text-slate-900 dark:text-slate-100">
                   <Link href={linkTo} target="_blank" rel="noopener noreferrer">
                     {name}
                   </Link>
-                </h1>
+                </h3>
                 <div className="flex">
                   {tags.map((tag, index) => (
                     <span
-                      className="mr-2 self-start rounded bg-blue-400 p-1 font-mono text-xs text-white"
+                      className="mr-2 self-start rounded bg-slate-500 p-1 font-mono text-xs text-white"
                       key={`tag-${index}`}
                     >
                       {tag}
@@ -121,7 +121,9 @@ export default function Projects() {
                   ))}
                 </div>
               </div>
-              <p className="mt-4 text-sm text-slate-600">{description}</p>
+              <p className="mt-4 text-sm text-slate-600 dark:text-slate-100">
+                {description}
+              </p>
             </div>
           ))}
         </div>
