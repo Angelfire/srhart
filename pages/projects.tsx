@@ -16,6 +16,12 @@ export const projects = [
     tags: ["GatsbyJS", "TailwindCSS"],
   },
   {
+    name: "Colorette",
+    linkTo: "https://github.com/Angelfire/colorette",
+    description: "Generate your color palette with just a couple of words",
+    tags: ["NextJS", "OpenAI", "TailwindCSS"],
+  },
+  {
     name: "Traveling",
     linkTo: "https://traveling-omega.vercel.app/",
     description: "GPT-3 experiment using OpenAI API",
@@ -33,7 +39,7 @@ export const projects = [
     description: "Colombian Holidays",
     image:
       "https://user-images.githubusercontent.com/315504/168429832-2392f558-a9fa-456c-b0f5-5f5c8da58dd7.png",
-    tags: ["React"],
+    tags: ["React", "NextJS"],
   },
   {
     name: "Cryptocurrencies Visor",
