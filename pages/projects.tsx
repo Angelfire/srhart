@@ -4,12 +4,6 @@ import Layout from "@/components/Layout"
 
 export const projects = [
   {
-    name: "SrHart",
-    linkTo: "https://srhart.co/",
-    description: "Porftolio Website",
-    tags: ["NextJS", "TailwindCSS"],
-  },
-  {
     name: "Velocidad de Escape",
     linkTo: "https://velocidadescape.com/",
     description: "My personal tech and personal blog",
