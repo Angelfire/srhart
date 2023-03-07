@@ -18,7 +18,7 @@ export default function Home({ repos }: { repos: DataResponse }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/github")
+  const res = await fetch("https://srhart.co/api/github")
   const { repos } = await res.json()
 
   return {
