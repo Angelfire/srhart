@@ -1,19 +1,9 @@
-import useSWR from "swr"
+import type { DataResponse } from "@/types"
+
 import Link from "next/link"
 import { Copy, RepoFork, Star } from "@/components/icons"
 
-const fetcher = (apiURL: string) => fetch(apiURL).then(res => res.json())
-
-export default function Repos() {
-  const { data, error } = useSWR("/api/github", fetcher)
-
-  if (error)
-    return (
-      <div className="my-14 mx-8 flex flex-col sm:container">
-        <p className="dark:text-slate-100">Failed to load</p>
-      </div>
-    )
-
+export default function Repos({ data }: { data: DataResponse }) {
   if (!data)
     return (
       <div className="my-14 mx-8 flex flex-col sm:container">
@@ -25,9 +15,9 @@ export default function Repos() {
 
   return (
     <div className="my-14 mx-8 flex flex-col sm:container">
-      {data.repos.length ? (
+      {data?.length ? (
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-          {data.repos.map((repo: any) => (
+          {data.map((repo: any) => (
             <div
               className="flex flex-col justify-between rounded border border-gray-200 p-2 shadow-md"
               key={repo.name}
