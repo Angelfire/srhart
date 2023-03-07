@@ -1,19 +1,11 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import type { RepoResponse } from '@/types'
+
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { Octokit } from 'octokit'
 
 type DataResponse = {
   repos: Array<RepoResponse>
-}
-
-type RepoResponse = {
-  name: string,
-  description: string,
-  html_url: string,
-  language: string,
-  stargazers_count: number,
-  forks: number,
-  size: number
 }
 
 export default async function handler(
