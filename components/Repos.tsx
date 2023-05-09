@@ -19,7 +19,7 @@ export default function Repos({ data }: { data: DataResponse }) {
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
           {data.map((repo: any) => (
             <div
-              className="flex flex-col justify-between rounded border border-gray-200 p-2 shadow-md"
+              className="flex flex-col justify-between rounded border border-gray-200 p-2"
               key={repo.name}
             >
               <div className="flex items-center">

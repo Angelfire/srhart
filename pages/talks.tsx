@@ -37,6 +37,11 @@ export const talks = [
     createdAt: "2014/02/27",
     name: "GRUNT VS GULP",
   },
+  {
+    url: "https://slides.com/angelfire/code-aa603e",
+    createdAt: "2023/04/18",
+    name: "Rendering Patterns for web apps",
+  },
 ]
 
 export default function Talks() {
@@ -52,7 +57,7 @@ export default function Talks() {
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
           {talks.map(({ createdAt, name, url }) => (
             <div
-              className="flex rounded border border-gray-200 p-2 shadow-md"
+              className="flex rounded border border-gray-200 p-2"
               key={`talk-${name}`}
             >
               <div className="flex flex-col justify-between">

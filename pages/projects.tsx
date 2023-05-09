@@ -98,7 +98,7 @@ export default function Projects() {
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
           {projects.map(({ description, linkTo, name, tags }) => (
             <div
-              className="rounded border border-gray-200 p-2 shadow-md"
+              className="rounded border border-gray-200 p-2"
               key={`project-${name}`}
             >
               {/* <div className="flex-none w-48 relative">
